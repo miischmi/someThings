@@ -10,7 +10,7 @@ public class NumberGenerator {
     public static void main(String[] args) throws IOException {
         List<Integer> zahlen = new ArrayList<Integer>();
 
-        for (int i = 0; i <= 10000; i++) {
+        for (int i = 0; i <= 50000; i++) {
             int zahl = (int) (Math.random() * (90000 + 1));
             if (zahlen.contains(zahl)) {
                 i--;
@@ -20,8 +20,7 @@ public class NumberGenerator {
             }
         }
         for (int list : zahlen) {
-            FileWriter fw = new FileWriter(new File("numbers.txt"), true);
-            BufferedWriter writer = new BufferedWriter(fw);
+            FileWriter writer = new FileWriter(new File("numbers.txt"), true);
             writer.write(list + "");
             writer.close();
         }
