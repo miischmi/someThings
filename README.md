@@ -1,2 +1,2 @@
 # someThings
-Random little projects done by me 
+Random little projects
